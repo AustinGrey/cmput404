@@ -1,0 +1,15 @@
+question 4, use pip freeze to show how the virtual environment is essentially a clean slate
+
+you can use a virutal env to freeze your requirements
+pip freeze > requirements.txt
+
+Use gitignore.io to help generate a good gitignore template
+
+curl stuff
+curl http://www.google.com
+
+give minified html
+
+-i gives the headers for inspection
+
+question 5: 301, must vist the www version
