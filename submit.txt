@@ -1,3 +1,18 @@
+1.
+	https://github.com/AustinGrey/cmput404
+2.
+	2.21.0
+3.
+	2.21.0
+4.
+	The virtual environment defaults to python3, while the actual environment defaults to python2 (this was on the lab machines - on my vm there was no obvious difference).
+	I should also mention that pip freeze on the vm actual environment shows tonnes of other modules not related to requests, but in the vm it only has requests related modules.
+5.
+	301 - Moved Permanently
+6.
+	
+
+
 question 4, use pip freeze to show how the virtual environment is essentially a clean slate
 
 you can use a virutal env to freeze your requirements
