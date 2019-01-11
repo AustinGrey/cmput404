@@ -8,9 +8,14 @@
 	The virtual environment defaults to python3, while the actual environment defaults to python2 (this was on the lab machines - on my vm there was no obvious difference).
 	I should also mention that pip freeze on the vm actual environment shows tonnes of other modules not related to requests, but in the vm it only has requests related modules.
 5.
-	301 - Moved Permanently
+	301 - Moved Permanently, to get 200 - OK you need to curl -i http://www.google.com
 6.
+	418 - I'm a Teapot, both curl -i and -iL return that status code, when I just plain curl the teapot page I get a page with some basic HTML, JS, CSS describing a teapot error. The 418 status error.
+7.
+	The output with POST showed that the variable X was stored with a value of Y as a POST variable for the page. This is useful for sending POST requests or getting pages that depend on POST arguments.
+8.
 	
+
 
 
 question 4, use pip freeze to show how the virtual environment is essentially a clean slate
