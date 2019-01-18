@@ -9,7 +9,7 @@ BUFFER_SIZE = 1024
 payload = f"GET / HTTP/1.0\r\nHost: {HOST}\r\n\r\n"
 
 def get_request(addr):
-    {family, socktype, proto, cannonname, sockaddr} = addr
+    (family, socktype, proto, cannonname, sockaddr) = addr
     try:
         s = socket.socket(family, socktype, proto)
         s.connect(sockaddr)
@@ -31,9 +31,9 @@ def get_request(addr):
 def main():
     addr_info = socket.getaddrinfo(HOST, PORT)
     for addr in addr_info:
-        {family, socktype, proto, cannonname, sockaddr} = addr
+        (family, socktype, proto, cannonname, sockaddr) = addr
         if family == socket.AF_INET and socktype == socket.SOCK_STREAM:
             get_request(addr)
 
-if name == '__main__':
+if __name__ == '__main__':
     main()

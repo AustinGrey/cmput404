@@ -1,0 +1,11 @@
+q 1
+socket type must be socket streaming type
+q2
+server need to bind and listen, clients dont need to do either as they just send data
+q3
+by setting the socket option SOL_REUSEADDR
+q4
+the port they connect on and the ip they connect from
+q5
+None, if it finishes
+
