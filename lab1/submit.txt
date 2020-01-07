@@ -1,17 +1,33 @@
 1.
-	https://github.com/AustinGrey/cmput404
+    https://github.com/AustinGrey/cmput404
 2.
-	2.21.0
+    2.22.0
 3.
-	2.21.0
+    2.22.0
 4.
-	The virtual environment defaults to python3, while the actual environment defaults to python2 (this was on the lab machines - on my vm there was no obvious difference).
-	I should also mention that pip freeze on the vm actual environment shows tonnes of other modules not related to requests, but in the vm it only has requests related modules.
+    The virtual environment defaults to python3, while the actual environment defaults to python2.
 5.
-	301 - Moved Permanently, to get 200 - OK you need to curl -i http://www.google.com
+    301 - Moved Permanently, to get 200 - OK you need to curl "http://www.google.com"
 6.
-	418 - I'm a Teapot, both curl -i and -iL return that status code, when I just plain curl the teapot page I get a page with some basic HTML, JS, CSS describing a teapot error. The 418 status error.
+    418 - I'm a Teapot, both curl -i and -iL return that status code, when I just plain curl the teapot page I get a page with some basic HTML, JS, CSS describing a teapot error. The 418 status error.
 7.
-	The output with POST showed that the variable X was stored with a value of Y as a POST variable for the page. This is useful for sending POST requests or getting pages that depend on POST arguments.
+    Here is a diff showing lines that differ in the output, with the non posted variable on the left, and the posted variable on the right:
+
+	Date: Tue, 07 Jan 2020 15:23:08 GMT                   | Date: Tue, 07 Jan 2020 15:23:23 GMT
+	<P>No form fields.                                    <
+	                                                      > <DT>X: <i>&lt;type 'instance'&gt;</i>
+	                                                      > <DD>MiniFieldStorage('X', 'Y')
+	                                                      > <DT> CONTENT_LENGTH <DD> 3
+	                                                      > <DT> CONTENT_TYPE <DD> application/x-www-form-urlencoded
+	<DT> REMOTE_PORT <DD> 46296                           | <DT> REMOTE_PORT <DD> 46298
+	<DT> REQUEST_METHOD <DD> GET                          | <DT> REQUEST_METHOD <DD> POST
+	<DT> UNIQUE_ID <DD> XhSiXBkilIbdJjWOkPapHAAAABE       | <DT> UNIQUE_ID <DD> XhSia6cT@VvEfJrfLHPxzwAAAAI
+	                                                      > <DT> CONTENT_LENGTH <DD> 3
+	                                                      > <DT> CONTENT_TYPE <DD> application/x-www-form-urlencoded
+	<DT> REMOTE_PORT <DD> 46296                           | <DT> REMOTE_PORT <DD> 46298
+	<DT> REQUEST_METHOD <DD> GET                          | <DT> REQUEST_METHOD <DD> POST
+	<DT> UNIQUE_ID <DD> XhSiXBkilIbdJjWOkPapHAAAABE       | <DT> UNIQUE_ID <DD> XhSia6cT@VvEfJrfLHPxzwAAAAI
+
+    The output with POST showed that the variable X was stored with a value of Y as a POST variable for the page. This is useful for sending POST requests or getting pages that depend on POST arguments. Without POST arguments, the initial request was a GET request instead.
 8.
-	https://raw.githubusercontent.com/AustinGrey/cmput404/master/lab1.py
+    https://raw.githubusercontent.com/AustinGrey/cmput404/master/lab1.py
