@@ -30,4 +30,4 @@
 
     The output with POST showed that the variable X was stored with a value of Y as a POST variable for the page. This is useful for sending POST requests or getting pages that depend on POST arguments. Without POST arguments, the initial request was a GET request instead.
 8.
-    https://raw.githubusercontent.com/AustinGrey/cmput404/master/lab1.py
+    https://raw.githubusercontent.com/AustinGrey/cmput404/master/lab1/lab1.py

@@ -10,4 +10,4 @@ import requests
 #print(google)
 
 
-print(requests.get("https://raw.githubusercontent.com/AustinGrey/cmput404/master/lab1.py").text)
+print(requests.get("https://raw.githubusercontent.com/AustinGrey/cmput404/master/lab1/lab1.py").text)
